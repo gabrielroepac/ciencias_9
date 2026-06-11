@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências 9º Ano - 2º Trimestre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <header>
+        <button id="mobile-menu-btn" class="mobile-btn">
+            <span class="icon">☰</span>
+        </button>
+        <div class="logo">
+            <h1>Ciências 9º Ano</h1>
+            <span>2º Trimestre</span>
+        </div>
+        <div class="header-actions">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar nas aulas...">
+            </div>
+            <button id="theme-toggle" class="theme-btn">
+                <span class="icon">🌓</span> Modo Escuro
+            </button>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <div id="sidebar-overlay" class="overlay"></div>
+        <aside class="sidebar" id="sidebar">
+            <h2>Aulas</h2>
+            <ul id="lesson-list">
+                <!-- Lista de aulas injetada via JS -->
+            </ul>
+        </aside>
+
+        <main class="main-content" id="main-content">
+            <div class="welcome-screen">
+                <h2>Bem-vindo ao conteúdo do 2º Trimestre!</h2>
+                <p>Selecione uma aula no menu lateral para começar os seus estudos.</p>
+            </div>
+            <div id="lesson-content"></div>
+        </main>
+    </div>
+
+    <script src="conteudo.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
